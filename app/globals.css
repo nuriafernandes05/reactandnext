@@ -40,12 +40,35 @@ body {
 
 main {
   /* Reset e Box Model */
-  width: 320px;
-  height: 450px;
+  width: 100%; /* Ajusta para o tamanho total do container pai */
+  max-width: 1200px; /* Limita a largura máxima */
+  min-height: 100vh; /* Garante que a altura do container ocupe toda a altura da tela */
   padding: 20px;
   border-radius: 20px;
   overflow-y: auto;
-
+  
   /* Fundo */
   background: whitesmoke;
+
+  /* Layout de Grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexibilidade no número de colunas */
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+/* Card de Produto */
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+  padding: 16px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.product-card img {
+  width: auto;
+  height: auto;
+  object-fit: cover; /* Ajusta as imagens sem distorcer */
+  border-radius: 10px;
 }
