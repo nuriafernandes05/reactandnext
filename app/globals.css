@@ -56,7 +56,14 @@ main {
   gap: 20px; /* Espaçamento entre os cards */
 }
 
-/* Card de Produto */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
 .product-card {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
@@ -64,8 +71,10 @@ main {
   padding: 16px;
   text-align: center;
   overflow: hidden;
-  width: 600px;
+  width: 400px;  /* Ajuste a largura do card */
+  max-width: 500px;  /* Ajuste o tamanho máximo */
 }
+
 
 .product-card img {
   width: auto;

@@ -3,12 +3,13 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
 };
-module.exports = { 
-  images: { 
-    domains: ['deisishop.pythonanywhere.com'], // Domínio permitido para imagens externas
-  }, 
+
+
+// next.config.js
+module.exports = {
+  images: {
+    domains: ['upload.wikimedia.org', 'deisishop.pythonanywhere.com'], // Adicione o domínio do seu servidor de imagens
+  },
 };
-
-
 
 export default nextConfig;

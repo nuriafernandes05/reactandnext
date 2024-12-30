@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import tecnologias from '@/app/data/tecnologias.json'; // Caminho para o JSON
 import TechCard from '../../components/techCard'; // Caminho para o componente
-import "./globals.css";
+import '../globals.css'; // Ajuste conforme necessário
 
 
 export default function Tecnologias() {
