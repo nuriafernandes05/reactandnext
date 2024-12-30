@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import useSWR from 'swr';
 import { Product } from '../models/interfaces';
-import Card from '@/components/card';
+import Card from '../../components/card';
 import '../globals.css';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
