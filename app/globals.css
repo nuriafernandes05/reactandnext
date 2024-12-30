@@ -58,12 +58,13 @@ main {
 
 /* Card de Produto */
 .product-card {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
   padding: 16px;
   text-align: center;
   overflow: hidden;
+  width: 600px;
 }
 
 .product-card img {

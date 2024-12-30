@@ -1,8 +1,8 @@
 // app/models/interfaces.ts
 export interface Product {
-    id: number;
-    name: string;
-    price: number;
-    description: string;
-    imageUrl: string;
-  }
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  image: string; // Alterado de imageUrl para image
+}
