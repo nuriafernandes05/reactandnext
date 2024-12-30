@@ -1,15 +1,8 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-
-// next.config.js
-module.exports = {
+const nextConfig = {
+  reactStrictMode: true, // Mantém o modo estrito do React
   images: {
-    domains: ['upload.wikimedia.org', 'deisishop.pythonanywhere.com'], // Adicione o domínio do seu servidor de imagens
+    domains: ['upload.wikimedia.org', 'deisishop.pythonanywhere.com'], // Adicione os domínios permitidos
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

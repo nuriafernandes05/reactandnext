@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Variáveis de tema */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -15,70 +16,61 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-body {
-  /* Box Model */
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-
-  /* Layout e Posicionamento */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  /* Fundo e Estética */
-  background: url('https://cdn.pixabay.com/photo/2022/06/20/14/20/space-7273891_1280.jpg');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat;
-}
 
 main {
-  /* Reset e Box Model */
-  width: 100%; /* Ajusta para o tamanho total do container pai */
-  max-width: 1200px; /* Limita a largura máxima */
-  min-height: 100vh; /* Garante que a altura do container ocupe toda a altura da tela */
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
   padding: 20px;
+  background: whitesmoke;
   border-radius: 20px;
   overflow-y: auto;
-  
-  /* Fundo */
-  background: whitesmoke;
-
-  /* Layout de Grid */
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexibilidade no número de colunas */
-  gap: 20px; /* Espaçamento entre os cards */
 }
 
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+}
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  padding: 20px;
 }
 
 .product-card {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 16px;
   text-align: center;
-  overflow: hidden;
-  width: 400px;  /* Ajuste a largura do card */
-  max-width: 500px;  /* Ajuste o tamanho máximo */
 }
 
-
 .product-card img {
-  width: auto;
+  max-width: 100%;
   height: auto;
-  object-fit: cover; /* Ajusta as imagens sem distorcer */
   border-radius: 10px;
+  object-fit: cover;
 }
