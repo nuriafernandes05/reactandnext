@@ -11,7 +11,7 @@ export default function Tecnologias() {
       <h1 className="text-2xl font-bold mb-4">Tecnologias</h1>
 
       <nav className="mb-4">
-        <Link href="/" className="text-blue-500 underline">Voltar</Link>
+        <Link href="/" >Voltar</Link>
       </nav>
 
       <div className="product-card">

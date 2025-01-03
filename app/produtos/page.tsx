@@ -5,6 +5,7 @@ import useSWR from 'swr';
 import { Product } from '../models/interfaces';
 import Card from '../../components/card';
 import '../globals.css';
+import Link from 'next/link';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -108,7 +109,17 @@ export default function Page() {
   return (
     <div>
       <div>
-        <h1>Bem-vindo à nossa Loja</h1>
+        <h1 className="text-2xl font-bold mb-4">Produtos</h1>
+      <nav className="mb-8">
+      
+          <ul className="flex space-x-4">
+            <li>
+              <Link href="/" >
+                Voltar
+              </Link>
+            </li>
+          </ul>
+        </nav>
         <p>Veja nossos produtos abaixo:</p>
       </div>
 
